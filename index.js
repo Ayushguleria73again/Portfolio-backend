@@ -9,7 +9,7 @@ const mailRoute = require("./Routes/mail");
 
 // Middleware
 app.use(cors(
-    {origin : ['http://localhost:5173/']}
+    {origin : ['https://portfolio-frontend-gilt-omega.vercel.app/']}
 )); 
 app.use(express.json()); 
 
