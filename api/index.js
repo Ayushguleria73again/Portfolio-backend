@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 8888;
-const mailRoute = require("./Routes/mail");
+const mailRoute = require("../Routes/mail");
 
 // ✅ Middleware
 app.use(cors({
