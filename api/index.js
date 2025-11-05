@@ -15,6 +15,10 @@ app.use(express.json());
 // ✅ Routes
 app.use("/api/mail", mailRoute);
 
+app.get("/", (req, res) => {
+  res.send("📧 Mailer API is running.");
+});
+
 // ✅ Server start
 app.listen(PORT, (err) => {
   if (err) {
